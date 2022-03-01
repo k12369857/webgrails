@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">Webside</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body>
+<div class="container">
+    <!-- Content here -->
+
+        <legend>廠別選擇</legend>
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">廠區</label>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="toyz" onchange="showtoy(this.value)">
+            <option value="1">煉一廠</option>
+            <option value="2">煉二廠</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">單元</label>
+        <select id="user" class="form-select form-select-sm" aria-label=".form-select-sm example">
+        </select>
+    </div>
+
+    </form>
+</div>
+
+
+
+
+<script src="js/ajax.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery.dataTables.min.js"> </script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+</body>
+</html>
